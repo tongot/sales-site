@@ -7,7 +7,7 @@
             <div class="hero-text">
               <h1 class="mx-auto font-weight-light">Customer gadget shop</h1>
               <hr />
-              <p class="font-weight-light">
+              <p class="home-p font-weight-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatum minus. Nulla aperiam
                 molestiae optio officia reprehenderit ratione animi, sint harum ullam labore natus quia perferendis,
                 perspiciatis provident fugit numquam!
@@ -20,18 +20,25 @@
             </div>
           </div>
         </div>
-        <div>
-          <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-              <a class="nav-link">Phones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active">Laptops</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Accesories</a>
-            </li>
-          </ul>
+        <div class="mt-2 row">
+          <div class="col-md-4">
+            <div class="circle-div">
+              <img src="/app.svg" style="margin:auto" alt width="100" height="100" />
+            </div>
+            <h3 class="font-weight-light text-center">Phones</h3>
+          </div>
+          <div class="col-md-4">
+            <div class="circle-div">
+              <img src="/purchase.svg" style="margin:auto" alt width="100" height="100" />
+            </div>
+            <h3 class="font-weight-light text-center">Laptops</h3>
+          </div>
+          <div class="col-md-4">
+            <div class="circle-div">
+              <img src="/headphones.svg" style="margin:auto" alt width="100" height="100" />
+            </div>
+            <h3 class="font-weight-light text-center">Accessories</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -41,7 +48,27 @@
 export default {};
 </script>
 <style>
-p {
+.circle-div {
+  border: solid 1px rgb(219, 219, 219);
+  width: 200px;
+  margin: auto;
+  height: 200px;
+  border-radius: 50%;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  color: blue;
+  cursor: pointer;
+  box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition-duration: 75ms;
+  transition-duration: 75ms;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.circle-div:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.home-p {
   font-size: 25px;
 }
 .hero-graphic {
@@ -75,6 +102,6 @@ p {
 }
 .hero {
   width: 100%;
-  height: 890px;
+  height: 800px;
 }
 </style>
