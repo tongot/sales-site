@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="hero">
+    <section class="hero">
       <div class="container">
-        <div class="row h-100 justify-content-center">
+        <div class="row justify-content-center">
           <div class="col-md-5">
             <div class="hero-text">
               <h1 class="mx-auto font-weight-light">Customer gadget shop</h1>
@@ -20,7 +20,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-2 row">
+        <div class="row">
           <div class="col-md-4">
             <div class="circle-div">
               <img src="/app.svg" style="margin:auto" alt width="100" height="100" />
@@ -41,33 +41,27 @@
           </div>
         </div>
       </div>
+    </section>
+    <div class>
+      <services />
+    </div>
+    <div class>
+      <productFlow />
     </div>
   </div>
 </template>
 <script>
-export default {};
+import productFlow from "../sections/ProductFlow";
+import services from "../sections/Services";
+
+export default {
+  components: {
+    productFlow,
+    services,
+  },
+};
 </script>
 <style>
-.circle-div {
-  border: solid 1px rgb(219, 219, 219);
-  width: 200px;
-  margin: auto;
-  height: 200px;
-  border-radius: 50%;
-  align-items: center;
-  justify-items: center;
-  display: flex;
-  color: blue;
-  cursor: pointer;
-  box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.5);
-  -webkit-transition-duration: 75ms;
-  transition-duration: 75ms;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-}
-.circle-div:hover {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}
 .home-p {
   font-size: 25px;
 }
@@ -100,8 +94,7 @@ export default {};
     margin-right: 0px;
   }
 }
-.hero {
-  width: 100%;
-  height: 800px;
+section {
+  height: 100vh;
 }
 </style>

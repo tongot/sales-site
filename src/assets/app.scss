@@ -3,3 +3,24 @@ body {
   margin-right: 20px;
   margin-left: 20px;
 }
+.circle-div {
+  border: solid 1px rgb(219, 219, 219);
+  width: 200px;
+  margin: auto;
+  height: 200px;
+  border-radius: 50%;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  color: blue;
+  cursor: pointer;
+  box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition-duration: 75ms;
+  transition-duration: 75ms;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  animation: fadeIn 1s ease-in;
+}
+.circle-div:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
