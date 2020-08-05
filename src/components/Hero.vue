@@ -69,14 +69,6 @@ export default {
   height: 600px;
   animation: fadeIn 1s ease-in-out;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .hero-text {
   margin-top: 100px;
   animation: slideInLeft 1s ease-in-out;
